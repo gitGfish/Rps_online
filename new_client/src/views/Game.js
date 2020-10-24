@@ -138,7 +138,7 @@ function Game({location}) {
             </div>
             
             <GameBoard key={rerender_board} my_turn={my_turn} makeMove={makeMove} setMyTurn={setMyTurn} player_id={player_id} setBoardReady={setIsReady} board={board} setBoard={setBoard}/>
-            {(Error) ? <Redirect to={`/`}/> : null }
+            {(Error) ? <Redirect to={`${process.env.PUBLIC_URL}/`}/> : null }
         </Card>
     </div>
   );

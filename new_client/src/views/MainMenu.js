@@ -22,7 +22,7 @@ function MainMenu() {
             </div>
           </div>
           <div style={{display:'flex' ,justifyContent:'center'}}>
-            <Link  onClick={e => (!name || !room) ? e.preventDefault() : null} to={(!name || !room) ? '/' : `/Lobby?name=${name}&room=${room}`}>
+            <Link  onClick={e => (!name || !room) ? e.preventDefault() : null} to={(!name || !room) ? `${process.env.PUBLIC_URL}/` : `${process.env.PUBLIC_URL}/Lobby?name=${name}&room=${room}`}>
                 <Button variant="primary"> Join Room </Button>
             </Link>
           </div>

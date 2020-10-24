@@ -110,7 +110,7 @@ function Lobby({location}) {
                 </div>
             
             <Board setBoardReady={setBoardReady} setBoard={setBoard}/>
-            {(is_all_ready ? <Redirect  to={(!state_name || !state_room) ? '/' : `/Game?name=${state_name}&room=${state_room}`} /> : null)}
+            {(is_all_ready ? <Redirect  to={(!state_name || !state_room) ? (`${process.env.PUBLIC_URL}/`) : `${process.env.PUBLIC_URL}/Game?name=${state_name}&room=${state_room}`} /> : null)}
         </Card>
     </div>
   );

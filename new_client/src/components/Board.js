@@ -4,7 +4,7 @@ import Tile  from './Tile';
 function Board(props) {
 
     const [Board, setBoard] = useState((props.board) ? props.board : [[],[],[],[],[],[],[],[]]);
-    const [available_tiles, setAvailableTiles] = useState([0,0,1,0,0,0]);
+    const [available_tiles, setAvailableTiles] = useState([0,5,5,4,1,1]);
     
     const [rerender_board, setRerenderBoard] = useState();
     useEffect(() => {
