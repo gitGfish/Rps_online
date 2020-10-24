@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d6dd89c13b8882fc36207691ebcf4911",
+    "revision": "7546fb3ba00e6d6fe41293ab1661e884",
     "url": "/Rps_online/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Rps_online/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "930dc39ce8cfc2b887bb",
+    "revision": "9c263e957b62df1659db",
     "url": "/Rps_online/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Rps_online/static/js/2.92accfc0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "930dc39ce8cfc2b887bb",
-    "url": "/Rps_online/static/js/main.3f9ec77c.chunk.js"
+    "revision": "9c263e957b62df1659db",
+    "url": "/Rps_online/static/js/main.05a46b11.chunk.js"
   },
   {
     "revision": "11317c9f71e7bd06a215",
