@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Rps_online/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/Rps_online/static/js/main.4beb2111.chunk.js",
+    "main.js.map": "/Rps_online/static/js/main.4beb2111.chunk.js.map",
+    "runtime-main.js": "/Rps_online/static/js/runtime-main.3a5696d8.js",
+    "runtime-main.js.map": "/Rps_online/static/js/runtime-main.3a5696d8.js.map",
+    "static/css/2.2a86faee.chunk.css": "/Rps_online/static/css/2.2a86faee.chunk.css",
+    "static/js/2.92accfc0.chunk.js": "/Rps_online/static/js/2.92accfc0.chunk.js",
+    "static/js/2.92accfc0.chunk.js.map": "/Rps_online/static/js/2.92accfc0.chunk.js.map",
+    "index.html": "/Rps_online/index.html",
+    "precache-manifest.7f0c96c93b036eea4030d6483d14c7b1.js": "/Rps_online/precache-manifest.7f0c96c93b036eea4030d6483d14c7b1.js",
+    "service-worker.js": "/Rps_online/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/Rps_online/static/css/2.2a86faee.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/Rps_online/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.92accfc0.chunk.js.LICENSE.txt": "/Rps_online/static/js/2.92accfc0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a5696d8.js",
+    "static/css/2.2a86faee.chunk.css",
+    "static/js/2.92accfc0.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.4beb2111.chunk.js"
+  ]
+}
