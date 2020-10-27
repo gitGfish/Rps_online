@@ -24,20 +24,26 @@ function GameBoard(props) {
 
 
     function checkSelsectTile(x_index,y_index){
+        
         if(x_index > Board.length || y_index > Board[0].length || x_index < 0 || y_index <0 )
             {
                 console.log("something went wrong")
                 return false;
             }
+        if(Board[x_index][y_index]['tile'] === 4 || Board[x_index][y_index]['tile'] === 5){
+            return false;
+        }
         if(Board[x_index][y_index]['player_id'] !== props.my_turn ){
                 console.log("not your player select difrent tile",Board[x_index][y_index]['player_id'] )
                 return false;
             }
+
         if(freeTiles(x_index + 1,y_index) || freeTiles(x_index - 1,y_index) 
                 || freeTiles(x_index ,y_index + 1 ) || freeTiles(x_index,y_index - 1))
             {
                 return true
             }
+        
         return false
     }
 
@@ -60,6 +66,10 @@ function GameBoard(props) {
     function handleClick(x_index,y_index){
         if(props.player_id === props.my_turn){
             if(selected_tile){
+                if(selected_tile['from_x'] === x_index && selected_tile['from_y'] === y_index){
+                    setSelectedTile(null)
+                    return
+                }
                 console.log(x_index,y_index)
                 if(Board[x_index][y_index]['player_id'] !== props.player_id && (isLegal(x_index,y_index,selected_tile['from_x'],selected_tile['from_y']))){
                     props.makeMove(x_index,y_index,selected_tile['from_x'],selected_tile['from_y'])

@@ -73,25 +73,25 @@ function Lobby({location}) {
                 <Card style={{flex:1,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:10,margin:10}}>
                     <AccountCircleIcon/>
                     &nbsp;
-                    <h5>
+                    <h6>
                         {(users_in_room && users_in_room.length > 0 ) ? `player 1: ${users_in_room[0]['name']}` : `waiting`}
-                    </h5>
+                    </h6>
                         {(users_in_room && users_in_room[0] && users_in_room[0]['is_ready']) ? <CheckBoxIcon/> : <CheckBoxOutlineBlankIcon/>}
                 </Card>
                 <Card style={{flex:1,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:10,margin:10}}>
                     <AccountCircleIcon/>
                     &nbsp;
-                    <h5>
+                    <h6>
                         {(users_in_room && users_in_room.length > 1 ) ? `player 2: ${users_in_room[1]['name']}` : `waiting`}
-                    </h5>
+                    </h6>
                         {(users_in_room && users_in_room[1] && users_in_room[1]['is_ready']) ? <CheckBoxIcon/> : <CheckBoxOutlineBlankIcon/>}
                 </Card>
                 <Card style={{flex:1,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:10,margin:10}}>
                     <MeetingRoomIcon/>
                     &nbsp;
-                    <h5>
+                    <h6>
                         room: {state_room}
-                    </h5>
+                    </h6>
                 </Card>
             </div>
             <div style={{flex:1,marginBottom:10 ,display:'flex', justifyContent:'center',alignItems:'stretch'}}>

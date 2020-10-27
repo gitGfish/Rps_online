@@ -8,12 +8,13 @@ const colors = ["#f4f4f4","#4fc1e8","#a0d568","#ffce54","#ac92eb","#ed5564"]
 function Tile(props) {
 
     const [type, setType] = useState(props.type);
-    
+    const [rerender, setRerender] = useState(new Date() +'');
 
     function handleClick(){
-
+        
         if(!props.disabled){
             props.handleClick(props.x_index,props.y_index )
+            setRerender(new Date() +'')
             return
         }
 
@@ -26,17 +27,17 @@ function Tile(props) {
             case 0:
                 return (null)
             case 1:
-                return (<GiRock color={(props.selected_tile) ? "blue" : "black"} size={'3em'}/>)
+                return (<GiRock color={(props.selected_tile) ? "blue" : "black"} size={'2em'}/>)
             case 2:
-                return (<FaToiletPaper color={(props.selected_tile) ? "blue" : "black"} size={'3em'}/>)
+                return (<FaToiletPaper color={(props.selected_tile) ? "blue" : "black"} size={'2em'}/>)
             case 3:
-                return (<TiScissorsOutline color={(props.selected_tile) ? "blue" : "black"} size={'3em'}/>)
+                return (<TiScissorsOutline color={(props.selected_tile) ? "blue" : "black"} size={'2em'}/>)
             case 4:
-                return (<GiBoxTrap color={(props.selected_tile) ? "blue" : "black"} size={'3em'}/>)
+                return (<GiBoxTrap color={(props.selected_tile) ? "blue" : "black"} size={'2em'}/>)
             case 5:
-                return (<FaFlag color={(props.selected_tile) ? "blue" : "black"} size={'3em'}/>)
+                return (<FaFlag color={(props.selected_tile) ? "blue" : "black"} size={'2em'}/>)
             case 6:
-                return (<SiPostwoman size={'3em'}/>)
+                return (<SiPostwoman size={'2em'}/>)
         
             default:
                 return (null)
@@ -44,14 +45,14 @@ function Tile(props) {
     }
 
   return (
-    <div style={{flex:1 ,display:'flex', flexDirection:'column' , justifyContent:'center' ,alignItems:'center'}}>
+    <div kew={rerender} style={{flex:1 ,display:'flex', flexDirection:'column' , justifyContent:'center' ,alignItems:'center'}}>
         {(props.is_enemy) ? 
         (
-                <button onClick={handleClick} style={{background:'#ed5564' , height:70,width:70}}>
-                    {<SiPostwoman size={'3em'}/>}  
+                <button  onClick={handleClick} style={{background:'#ed5564' , height:'3em',width:'3em'}}>
+                    {<SiPostwoman size={'2em'}/>}  
                 </button>
         ) : (
-            <button onClick={handleClick} style={{background:colors[type] , height:70,width:70}}> {iconTile(type)}  </button>
+            <button onClick={handleClick} style={{background:colors[type] , height:'3em',width:'3em'}}> {iconTile(type)}  </button>
         )} 
         
         {(props.disabled) ? (

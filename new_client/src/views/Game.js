@@ -121,17 +121,17 @@ function Game({location}) {
                 <Card style={{flex:1,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:10,margin:10}}>
                     <AccountCircleIcon/>
                     &nbsp;
-                    <h5>
+                    <h6>
                         {(users_in_room && users_in_room.length > 0 ) ? `player 1: ${users_in_room[0]['name']}` : `waiting`}
-                    </h5>
+                    </h6>
                         
                 </Card>
                 <Card style={{flex:1,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:10,margin:10}}>
                     <AccountCircleIcon/>
                     &nbsp;
-                    <h5>
+                    <h6>
                         {(users_in_room && users_in_room.length > 1 ) ? `player 2: ${users_in_room[1]['name']}` : `waiting`}
-                    </h5>
+                    </h6>
                         
                 </Card>
                 <Card style={{flex:1,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:10,margin:10}}>

@@ -59,12 +59,12 @@ function Board(props) {
             let newBoard = [...Board]
             newBoard[x_index][y_index] = newValue
             setBoard([...newBoard])
-            setRerenderBoard("supper-uniqe-key"+ new Date()+newValue)
+            setRerenderBoard("supper-uniqe-key"+ new Date()+x_index+y_index+newValue)
         }
         
     }
   return (
-    <div key={rerender_board} style={{display:'flex',flexDirection:'column'}}>
+    <div key={rerender_board} style={{display:'flex',flexDirection:'column',justifyContent:'center'}}>
             {Board.map((row,x_index) => {
                 return (
                     <div style={{display:'flex',flexDirection:'row'}}>
