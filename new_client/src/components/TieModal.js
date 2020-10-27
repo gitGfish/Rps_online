@@ -3,6 +3,7 @@ import Tile from './Tile'
 import Modal from 'react-bootstrap/Modal'
 import socket from "../socket.js";
 import Button from 'react-bootstrap/Button'
+import logo from '../assets/giphy.gif'
   function TieModal(props) {
     
     const [show_loading_animation, setShowLoadingAnimation] = useState();
@@ -48,7 +49,7 @@ import Button from 'react-bootstrap/Button'
                     <Tile handleClick={(a,b) => tieBreak(3)}  type={3} />
                 </div>
             )}
-            
+            <img src={logo} />
         </Modal.Body>
       </Modal>
   

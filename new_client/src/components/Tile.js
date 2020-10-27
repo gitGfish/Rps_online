@@ -48,11 +48,11 @@ function Tile(props) {
     <div kew={rerender} style={{flex:1 ,display:'flex', flexDirection:'column' , justifyContent:'center' ,alignItems:'center'}}>
         {(props.is_enemy) ? 
         (
-                <button  onClick={handleClick} style={{background:'#ed5564' , height:'3em',width:'3em'}}>
+                <button style={{cursor:'pointer'}} onClick={handleClick} style={{background:'#ed5564' , height:'3em',width:'3em'}}>
                     {<SiPostwoman size={'2em'}/>}  
                 </button>
         ) : (
-            <button onClick={handleClick} style={{background:colors[type] , height:'3em',width:'3em'}}> {iconTile(type)}  </button>
+            <button style={{cursor:'pointer'}} onClick={handleClick} style={{background:colors[type] , height:'3em',width:'3em'}}> {iconTile(type)}  </button>
         )} 
         
         {(props.disabled) ? (
