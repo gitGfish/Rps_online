@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Rps_online/precache-manifest.2061eb79afbb5d6d880e84ed5c471769.js"
+  "/Rps_online/precache-manifest.8c32649171e1b5bb54a115cc30ccff8b.js"
 );
 
 self.addEventListener('message', (event) => {
